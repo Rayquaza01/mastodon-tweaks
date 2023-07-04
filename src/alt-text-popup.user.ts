@@ -8,6 +8,9 @@
 // @description Shows alt text for an image with alt+click
 // ==/UserScript==
 
+/**
+ * Queries all images on the current page and, if it has alt text, adds an event listener to display a popup
+ */
 function addAltEvent() {
   const images = [...document.querySelectorAll("img.letterbox:not([data-alt-processed])")] as HTMLImageElement[];
   images.forEach(item => {
@@ -23,7 +26,7 @@ function addAltEvent() {
           e.stopPropagation();
           alert(item.getAttribute("alt"));
         }
-      })
+      });
     }
   })
 }
