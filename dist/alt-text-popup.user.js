@@ -3,26 +3,32 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://strangeobject.space/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      Rayquaza01
 // @description Shows alt text for an image with alt+click
 // ==/UserScript==
+/**
+ * Queries all images on the current page and, if it has alt text, adds an event listener to display a popup
+ */
 function addAltEvent() {
-    const images = [...document.querySelectorAll("img.letterbox:not([data-alt-processed])")];
-    images.forEach(item => {
+    // get all media galleries on page
+    const galleries = [...document.querySelectorAll(".media-gallery:not([data-alt-processed])")];
+    galleries.forEach(gallery => {
         // avoid duplicate processing
-        item.dataset.altProcessed = "1";
-        // if item has alt text, add event
-        if (item.getAttribute("alt") !== null) {
+        gallery.dataset.altProcessed = "1";
+        // grab all images and videos inside of the gallery
+        const images = [...gallery.querySelectorAll("img, video")];
+        images.forEach(item => {
             item.addEventListener("click", (e) => {
                 // only show alert if user held down the alt key
                 if (e.altKey) {
                     e.preventDefault();
                     e.stopPropagation();
-                    alert(item.getAttribute("alt"));
+                    // prefer alt text, fall back to title text if not present
+                    alert(item.getAttribute("alt") ?? item.getAttribute("title") ?? "No alt text provided.");
                 }
             });
-        }
+        });
     });
 }
 /**
@@ -51,3 +57,4 @@ function waitForFeedObserver() {
 }
 const observer = new MutationObserver(waitForFeedObserver);
 observer.observe(document.body, { childList: true, subtree: true });
+export {};
