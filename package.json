@@ -1,0 +1,15 @@
+{
+  "name": "mastodon-tweaks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:userscript": "tsc",
+    "watch:userscript": "tsc --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
