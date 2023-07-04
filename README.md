@@ -4,6 +4,6 @@ A collection of user scripts to tweak the behavior of Mastodon. These require a 
 
 # Alt Text Popup
 
-[Source](https://github.com/Rayquaza01/mastodon-tweaks/blob/main/src/alt-text-popup.user.ts) [Install](https://github.com/Rayquaza01/mastodon-tweaks/blob/main/dist/alt-text-popup.user.js)
+[Source](https://github.com/Rayquaza01/mastodon-tweaks/blob/main/src/alt-text-popup.user.ts) | [Install](https://github.com/Rayquaza01/mastodon-tweaks/blob/main/dist/alt-text-popup.user.js)
 
 Displays an alert popup showing the alt text for an image when the user presses ALT+Click.
