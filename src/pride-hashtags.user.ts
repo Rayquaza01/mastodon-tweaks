@@ -2,7 +2,7 @@
 // @name        Mastodon Pride Colored Hashtags
 // @namespace   Violentmonkey Scripts
 // @match       https://strangeobject.space/*
-// @version     1.1
+// @version     1.2
 // @author      Rayquaza01
 // @description Makes LGBTQ+ related hashtags be colored as their pride flag
 // @grant       none
@@ -63,7 +63,8 @@ function applyTagColors() {
     if (PrideFlagTags.includes(tag)) {
       item.style.background = PrideFlagTagsToGradients[tag];
       item.style.backgroundClip = "text";
-      item.style.color = "transparent";
+      // use -webkit-text-fill-color, so that the underline still appears on hover
+      item.style.webkitTextFillColor = "transparent";
     }
 
     // prevent item from being processed twice
