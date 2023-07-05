@@ -2,7 +2,7 @@
 // @name        Mastodon Pride Colored Hashtags
 // @namespace   Violentmonkey Scripts
 // @match       https://strangeobject.space/*
-// @version     1.0
+// @version     1.1
 // @author      Rayquaza01
 // @description Makes LGBTQ+ related hashtags be colored as their pride flag
 // @grant       none
@@ -42,7 +42,8 @@ const PrideFlagTagsToGradients = {
     "gay": gradients["gay"],
     "lgbt": gradients["lgbt"],
     "lgbtq": gradients["lgbt"],
-    "lgbtqia": gradients["lgbt"]
+    "lgbtqia": gradients["lgbt"],
+    "queer": gradients["lgbt"]
 };
 /** List of all supported tags. Same as keys from Tag to Gradient table */
 const PrideFlagTags = Object.keys(PrideFlagTagsToGradients);
@@ -89,3 +90,4 @@ function waitForFeedObserver() {
 }
 const observer = new MutationObserver(waitForFeedObserver);
 observer.observe(document.body, { childList: true, subtree: true });
+export {};

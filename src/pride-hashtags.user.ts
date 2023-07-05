@@ -2,7 +2,7 @@
 // @name        Mastodon Pride Colored Hashtags
 // @namespace   Violentmonkey Scripts
 // @match       https://strangeobject.space/*
-// @version     1.0
+// @version     1.1
 // @author      Rayquaza01
 // @description Makes LGBTQ+ related hashtags be colored as their pride flag
 // @grant       none

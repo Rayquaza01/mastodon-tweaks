@@ -9,5 +9,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "files": ["src/highlight-hashtags.user.ts", "src/alt-text-popup.user.ts", "src/pride-hashtags.user.ts", "src/GM_globals.ts"]
+  "files": ["src/alt-text-popup.user.ts", "src/pride-hashtags.user.ts", "src/GM_globals.ts"]
 }
