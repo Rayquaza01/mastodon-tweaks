@@ -11,3 +11,9 @@ These scripts all use strangeobject.space, the instance I'm on, in the match tag
 [Source](https://github.com/Rayquaza01/mastodon-tweaks/blob/main/src/alt-text-popup.user.ts) | [Install](https://github.com/Rayquaza01/mastodon-tweaks/raw/main/dist/alt-text-popup.user.js)
 
 Displays an alert popup showing the alt text for an image when the user presses ALT+Click.
+
+# Pride Hashtags
+
+[Source](https://github.com/Rayquaza01/mastodon-tweaks/blob/main/src/pride-hashtags.user.ts) | [Install](https://github.com/Rayquaza01/mastodon-tweaks/raw/main/dist/pride-hashtags.user.js)
+
+LGBT related hashtags will be colored with their respective pride flags, similar to how it's done on Tumblr. The gradient colors may negatively affect the readability of the tags.
