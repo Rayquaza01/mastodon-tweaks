@@ -6,9 +6,6 @@
 // @version     1.0
 // @author      -
 // @description -
-// @grant       GM_setValue
-// @grant       GM_getValue
-// @grant       GM_registerMenuCommand
 // ==/UserScript==
 
 /**
