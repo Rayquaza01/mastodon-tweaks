@@ -2,22 +2,22 @@
 // @name        Mastodon Pride Colored Hashtags
 // @namespace   Violentmonkey Scripts
 // @match       https://strangeobject.space/*
-// @version     1.2
+// @version     1.3
 // @author      Rayquaza01
 // @description Makes LGBTQ+ related hashtags be colored as their pride flag
 // @grant       none
 // ==/UserScript==
 /** Linear gradients corresponding to pride flag colors. There should be one per supported flag */
 const gradients = {
-    trans: "linear-gradient(to right, #5BCFFA, #F5ABB9, #FFFFFF, #F5ABB9, #5BCFFA)",
-    enby: "linear-gradient(to right, #FFF42F, #FFFFFF, #9C59D1, #000000)",
+    trans: "linear-gradient(to right, #55cdfc, #f7a8b8)",
+    enby: "linear-gradient(to right, #fff430, #9c59d1, #000)",
     bi: "linear-gradient(to right, #D70071, #9C4E97, #0035AA)",
     pan: "linear-gradient(to right, #FF1B8D, #FFD900, #1BB3FF)",
-    ace: "linear-gradient(to right, #000000, #A5A5A5, #FFFFFF, #810081)",
-    aro: "linear-gradient(to right, #3AA740, #A8D47A, #FFFFFF, #ABABAB, #000000)",
+    ace: "linear-gradient(to right, #000, #a4a4a4, #810081)",
+    aro: "linear-gradient(to right, #3aa63f, #a8d47a, #aaa, #000);",
     aroace: "linear-gradient(to right, #E38D00, #EDCE00, #FFFFFF, #62B0DD, #1A3555)",
-    lesbian: "linear-gradient(to right, #D62900, #F07722, #FF9B55, white, #D262A6, #B75591, #A50062)",
-    gay: "linear-gradient(to right, #018E71, #21CFAC, #9AE9C3, #FFFFFF, #7CAFE4, #4F47CC, #3C1379)",
+    lesbian: "linear-gradient(to right, #d62900, #ff9b55, #d461a6, #a50062)",
+    gay: "linear-gradient(to right, #26ceaa, #f1efff, #5049cc)",
     lgbt: "linear-gradient(to right, #000000, #794E10, #E60000, #FF8E00, #FFEE00, #028121, #004CFF, #770088)"
 };
 /**
