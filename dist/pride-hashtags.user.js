@@ -89,4 +89,3 @@ function waitForFeedObserver() {
 }
 const observer = new MutationObserver(waitForFeedObserver);
 observer.observe(document.body, { childList: true, subtree: true });
-export {};
