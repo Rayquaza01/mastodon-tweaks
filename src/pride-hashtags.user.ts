@@ -44,7 +44,8 @@ const PrideFlagTagsToGradients = {
     "gay": gradients["gay"],
     "lgbt": gradients["lgbt"],
     "lgbtq": gradients["lgbt"],
-    "lgbtqia": gradients["lgbt"]
+    "lgbtqia": gradients["lgbt"],
+    "queer": gradients["lgbt"]
 };
 
 /** List of all supported tags. Same as keys from Tag to Gradient table */
